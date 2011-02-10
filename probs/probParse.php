@@ -17,7 +17,6 @@ $fw = fopen($operFile.'.prob','w');
 $tags = $xpath->query('//div[@class="problem_content"]');
 foreach ($tags as $tag) {
 	$foo = (trim($tag->nodeValue));
-	echo $foo;
 	fwrite($fw,$foo);
 }
 
